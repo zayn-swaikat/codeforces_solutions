@@ -1,17 +1,9 @@
 t = int(input())
 for _ in range(t):
     n, k, x = map(int, input().split())
-    mini = 0
-    maxi = 0
+    mini = k * (1 + k) // 2
+    maxi = k * (2*n - k +1) // 2
     ok = True
-    i = 0
-    while i < k:
-        maxi += n-i
-        i += 1
-    j = 1
-    while j <= k:
-        mini += j
-        j += 1
     if x < mini or x > maxi:
         ok = False
     if ok:
