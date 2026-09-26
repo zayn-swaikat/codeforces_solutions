@@ -1,0 +1,5 @@
+n = int(input())
+string = input()
+zeros = string.count('0')
+ones = string.count('1')
+print(abs(zeros - ones))
